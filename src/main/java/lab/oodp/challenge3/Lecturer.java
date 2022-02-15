@@ -18,48 +18,56 @@ public class Lecturer {
     
     public String getName() {
     	//TODO:complete this
-        return "";
+
+
+
+        return this.name;
     }
 
     public void setName(String name) {
     	 //TODO:complete this
+        this.name = name;
     }
 
     public int getStaffId() {
     	//TODO:complete this
-        return 0;
+        return this.staffId;
     }
 
     public void setStaffId(int staffId) {
     	//TODO:complete this
+        this.staffId = staffId;
     }
 
     public String[] getPapers() {
     	//TODO:complete this
-        return null;
+        return this.papers;
     }
 
     public void setPapers(String[] papers) {
     	//TODO:complete this
+        this.papers = papers;
     }
 
     public boolean isOnLeave() {
     	//TODO:complete this
-        return false;
+        return this.onLeave;
     }
 
     public void setOnLeave(boolean onLeave) {
     	//TODO:complete this
+        this.onLeave = onLeave;
     }
 
     public boolean teachesMorePapersThan(Lecturer other) {
     	//TODO:complete this
-        return false;
+
+        return this.papers.length > other.papers.length;
     }
 
     @Override
     public String toString() {
-        return "";
+        return "id:"+this.staffId+" "+this.name+" is teaching "+this.papers.length+" papers.";
     }
 }
 
